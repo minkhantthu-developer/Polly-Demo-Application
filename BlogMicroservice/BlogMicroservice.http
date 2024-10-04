@@ -1,0 +1,6 @@
+@BlogMicroservice_HostAddress = http://localhost:5153
+
+GET {{BlogMicroservice_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
