@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Document", "Document", "{45
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetBlogMicroservice", "GetBlogMicroservice\GetBlogMicroservice.csproj", "{7288D3E2-7697-4856-A894-00AF4F41EDB7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +22,10 @@ Global
 		{98CB71CA-5F05-4E55-B26B-8FC3D470C107}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98CB71CA-5F05-4E55-B26B-8FC3D470C107}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98CB71CA-5F05-4E55-B26B-8FC3D470C107}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7288D3E2-7697-4856-A894-00AF4F41EDB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7288D3E2-7697-4856-A894-00AF4F41EDB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7288D3E2-7697-4856-A894-00AF4F41EDB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7288D3E2-7697-4856-A894-00AF4F41EDB7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
