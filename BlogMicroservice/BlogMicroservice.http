@@ -1,6 +1,9 @@
-@BlogMicroservice_HostAddress = http://localhost:5153
+@BlogMicroservice_HostAddress = https://localhost:7172
 
-GET {{BlogMicroservice_HostAddress}}/weatherforecast/
+GET https://localhost:7172/api/blog/1
 Accept: application/json
 
 ###
+
+GET https://localhost:7076/api/blog/1
+Accept: application/json
