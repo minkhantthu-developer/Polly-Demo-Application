@@ -3,8 +3,15 @@ using GetBlogMicroservice.Options;
 using Microsoft.Extensions.Options;
 using Polly;
 using Polly.Extensions.Http;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
+
+Log.Logger = new LoggerConfiguration()
+    .WriteTo.Console()
+    .CreateLogger();
+
+Log.Information("Starting up Inventory Service.....");
 
 // Add services to the container.
 
@@ -33,7 +40,10 @@ builder.Services.AddSingleton(
     resolver => resolver.GetRequiredService<IOptions<BlogClientOption>>()
         .Value);
 
+builder.Services.AddSerilog();
+
 var app = builder.Build();
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
