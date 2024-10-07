@@ -14,7 +14,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var retryPolicy = HttpPolicyExtensions.HandleTransientHttpError()
-                .WaitAndRetryAsync(4, ra => TimeSpan.FromSeconds(Math.Pow(2,ra)/2));
+                .WaitAndRetryAsync(4, retryAttemp => TimeSpan.FromSeconds(Math.Pow(2,retryAttemp)/2));
 
 builder.Services.AddHttpClient<IBlogClient, BlogClient>().ConfigureHttpClient(
     (serviceProvider, httpClient) =>
